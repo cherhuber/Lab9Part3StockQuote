@@ -36,74 +36,94 @@ public class Stock_Quotes extends javax.swing.JFrame {
         timerInitialized = false;
         initComponents();
     }
-public void getYahooQuotes(){
-    quoteList.add(URLreader.getQuotes(currStock));
-    if(quoteList.size() > maxQuotes){
-        timer.stop();
-    }else{
-        switch (i){
-            case 0:
-                lblQuote1.setText(String.valueOf(quoteList.get(i)));
-                break;
-            case 1:
-                lblQuote2.setText(String.valueOf(quoteList.get(i)));
-                break;
-            case 2:
-                lblQuote3.setText(String.valueOf(quoteList.get(i)));
-                break;
-            case 3:
-                lblQuote4.setText(String.valueOf(quoteList.get(i)));
-                break;
-            case 4:
-                lblQuote5.setText(String.valueOf(quoteList.get(i)));
-                break;
-            case 5:
-                lblQuote6.setText(String.valueOf(quoteList.get(i)));
-                break;
-            case 6:
-                lblQuote7.setText(String.valueOf(quoteList.get(i)));
-                break;
-            case 7:
-                lblQuote8.setText(String.valueOf(quoteList.get(i)));
-                break;
-            case 8:
-                lblQuote9.setText(String.valueOf(quoteList.get(i)));
-                break;
-            case 9:
-                lblQuote10.setText(String.valueOf(quoteList.get(i)));
-                break;
-            case 10:
-                lblQuote11.setText(String.valueOf(quoteList.get(i)));
-                break;
-            case 11:
-                lblQuote12.setText(String.valueOf(quoteList.get(i)));
-                break;
-            case 12:
-                lblQuote13.setText(String.valueOf(quoteList.get(i)));
-                break;
-            case 13:
-                lblQuote14.setText(String.valueOf(quoteList.get(i)));
-                break;
-            case 14:
-                lblQuote15.setText(String.valueOf(quoteList.get(i)));
-                break;
-            default:
-                break;
+    public void getYahooQuotes(){
+        quoteList.add(URLreader.getQuotes(currStock));
+        if(quoteList.size() > maxQuotes){
+            timer.stop();
+        }else{
+            switch (i){
+                case 0:
+                    lblQuote1.setText(String.valueOf(quoteList.get(i)));
+                    break;
+                case 1:
+                    lblQuote2.setText(String.valueOf(quoteList.get(i)));
+                    break;
+                case 2:
+                    lblQuote3.setText(String.valueOf(quoteList.get(i)));
+                    break;
+                case 3:
+                    lblQuote4.setText(String.valueOf(quoteList.get(i)));
+                    break;
+                case 4:
+                    lblQuote5.setText(String.valueOf(quoteList.get(i)));
+                    break;
+                case 5:
+                    lblQuote6.setText(String.valueOf(quoteList.get(i)));
+                    break;
+                case 6:
+                    lblQuote7.setText(String.valueOf(quoteList.get(i)));
+                    break;
+                case 7:
+                    lblQuote8.setText(String.valueOf(quoteList.get(i)));
+                    break;
+                case 8:
+                    lblQuote9.setText(String.valueOf(quoteList.get(i)));
+                    break;
+                case 9:
+                    lblQuote10.setText(String.valueOf(quoteList.get(i)));
+                    break;
+                case 10:
+                    lblQuote11.setText(String.valueOf(quoteList.get(i)));
+                    break;
+                case 11:
+                    lblQuote12.setText(String.valueOf(quoteList.get(i)));
+                    break;
+                case 12:
+                    lblQuote13.setText(String.valueOf(quoteList.get(i)));
+                    break;
+                case 13:
+                    lblQuote14.setText(String.valueOf(quoteList.get(i)));
+                    break;
+                case 14:
+                    lblQuote15.setText(String.valueOf(quoteList.get(i)));
+                    break;
+                default:
+                    break;
+            }
         }
+        i++;
+        double avg = calcAverage();
+        DecimalFormat sAvg = new DecimalFormat("#.##");
+        lblAvgText.setText(sAvg.format(avg));
     }
-    i++;
-    double avg = calcAverage();
-    DecimalFormat sAvg = new DecimalFormat("#.##");
-    lblAvgText.setText(sAvg.format(avg));
-}
-public double calcAverage(){
-    int len = quoteList.size();
-    double sum = 0;
-    for (int j=0;j<len;j++){
-        sum = sum + quoteList.get(j);
+    public double calcAverage(){
+        int len = quoteList.size();
+        double sum = 0;
+        for (int j=0;j<len;j++){
+            sum = sum + quoteList.get(j);
+        }
+        return sum/len;
     }
-    return sum/len;
-}
+    private void clearQuotes(){
+        i = 0;
+        quoteList.removeAll(quoteList);
+        lblQuote1.setText("");
+        lblQuote2.setText("");
+        lblQuote3.setText("");
+        lblQuote4.setText("");
+        lblQuote5.setText("");
+        lblQuote6.setText("");
+        lblQuote7.setText("");
+        lblQuote8.setText("");
+        lblQuote9.setText("");
+        lblQuote10.setText("");
+        lblQuote11.setText("");
+        lblQuote12.setText("");
+        lblQuote13.setText("");
+        lblQuote14.setText("");
+        lblQuote15.setText("");
+        lblAvgText.setText("");
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -319,6 +339,7 @@ public double calcAverage(){
 
     private void btnGetQuotesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGetQuotesActionPerformed
         // TODO add your handling code here:
+        clearQuotes();
         if(timerInitialized && timer.isRunning()){
             timer.stop();
         }
