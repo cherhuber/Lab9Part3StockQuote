@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.text.DecimalFormat;
 
  
 /**
@@ -91,6 +92,9 @@ public void getYahooQuotes(){
         }
     }
     i++;
+    double avg = calcAverage();
+    DecimalFormat sAvg = new DecimalFormat("#.##");
+    lblAvgText.setText(sAvg.format(avg));
 }
 public double calcAverage(){
     int len = quoteList.size();
