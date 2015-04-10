@@ -12,14 +12,7 @@ public class URLreader {
     public static Double getQuotes (String stock) {
         try
         {
-//            String[] stocks =
-//            {
-//                "IBM", "INTC"
-//            }; //
-            
-            //URL yahoofinance = new url.("http://finance.yahoo.com/d/quotes.csv?s=" + stocks[0] + "+" + stocks[1] + "&f=hg");
-           // URL yahoofinance = new URL("http://www.oracle.com/");
-            URL yahoofinance = new URL("http://finance.yahoo.com/d/quotes.csv?s=" + stock + "&f=hg");
+            URL yahoofinance = new URL("http://finance.yahoo.com/d/quotes.csv?s=" + stock + "&f=l1");
             URLConnection yc = yahoofinance.openConnection();
             BufferedReader in = new BufferedReader(new InputStreamReader(yc.getInputStream()));
             String inputLine = in.readLine();

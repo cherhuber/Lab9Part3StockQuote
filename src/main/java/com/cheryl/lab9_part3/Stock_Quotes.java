@@ -2,19 +2,25 @@ package com.cheryl.lab9_part3;
 import java.util.ArrayList;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
  
 /**
  *
  * @author cheryl
  */
+
 public class Stock_Quotes extends javax.swing.JFrame {
+    private final int maxQuotes = 15;
     private double averagePrice;
-    ArrayList<Double> quoteList;
+    private ArrayList<Double> quoteList;
     private final String[] arrStock  = {"INTC", "IBM", "AAPL", "SBUX","TGT"};
     private final int[] arrTime ={5000, 10000, 30000, 60000, 120000};                       
-    String currStock;
-    int delay, i;
+    private String currStock;
+    private int delay,i;
+    private Timer timer;
+    private boolean timerInitialized;//determines if timer has been initialized
     
     /**
      * Creates new form Stock_Quotes
@@ -26,11 +32,65 @@ public class Stock_Quotes extends javax.swing.JFrame {
         delay = 0;
         i=0;
         currStock = "INTC";
+        timerInitialized = false;
         initComponents();
     }
 public void getYahooQuotes(){
     quoteList.add(URLreader.getQuotes(currStock));
-    
+    if(quoteList.size() > maxQuotes){
+        timer.stop();
+    }else{
+        switch (i){
+            case 0:
+                lblQuote1.setText(String.valueOf(quoteList.get(i)));
+                break;
+            case 1:
+                lblQuote2.setText(String.valueOf(quoteList.get(i)));
+                break;
+            case 2:
+                lblQuote3.setText(String.valueOf(quoteList.get(i)));
+                break;
+            case 3:
+                lblQuote4.setText(String.valueOf(quoteList.get(i)));
+                break;
+            case 4:
+                lblQuote5.setText(String.valueOf(quoteList.get(i)));
+                break;
+            case 5:
+                lblQuote6.setText(String.valueOf(quoteList.get(i)));
+                break;
+            case 6:
+                lblQuote7.setText(String.valueOf(quoteList.get(i)));
+                break;
+            case 7:
+                lblQuote8.setText(String.valueOf(quoteList.get(i)));
+                break;
+            case 8:
+                lblQuote9.setText(String.valueOf(quoteList.get(i)));
+                break;
+            case 9:
+                lblQuote10.setText(String.valueOf(quoteList.get(i)));
+                break;
+            case 10:
+                lblQuote11.setText(String.valueOf(quoteList.get(i)));
+                break;
+            case 11:
+                lblQuote12.setText(String.valueOf(quoteList.get(i)));
+                break;
+            case 12:
+                lblQuote13.setText(String.valueOf(quoteList.get(i)));
+                break;
+            case 13:
+                lblQuote14.setText(String.valueOf(quoteList.get(i)));
+                break;
+            case 14:
+                lblQuote15.setText(String.valueOf(quoteList.get(i)));
+                break;
+            default:
+                break;
+        }
+    }
+    i++;
 }
 public double calcAverage(){
     int len = quoteList.size();
@@ -255,14 +315,20 @@ public double calcAverage(){
 
     private void btnGetQuotesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGetQuotesActionPerformed
         // TODO add your handling code here:
+        if(timerInitialized && timer.isRunning()){
+            timer.stop();
+        }
         delay = arrTime[cmbTimeInterval.getSelectedIndex()];
         currStock = arrStock[cmbStocks.getSelectedIndex()];
-      ActionListener taskPerformer = new ActionListener() {
-      public void actionPerformed(ActionEvent evt) {
-          //...Perform a task...
-      }
-      };
-         new javax.swing.Timer(delay, taskPerformer).start();
+        timer = new Timer(delay, new ActionListener() {
+          @Override
+          public void actionPerformed(ActionEvent e) {
+              getYahooQuotes();
+          }
+       });
+        timerInitialized = true;
+        timer.start();
+         
     }//GEN-LAST:event_btnGetQuotesActionPerformed
 
     /**
