@@ -43,46 +43,9 @@
                                   <Component id="cmbTimeInterval" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="lblQuote2" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lblQuote1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lblQuote3" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lblQuote4" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lblQuote5" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lblAvgLbl" alignment="1" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <Component id="lblQuote10" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="lblQuote15" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="lblQuote9" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="lblQuote14" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="lblQuote6" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
-                                      <Component id="lblQuote11" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="lblQuote7" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="lblQuote12" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="lblQuote8" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="lblQuote13" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                          </Group>
+                          <Component id="lblAvgLbl" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="65" max="32767" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="lblAvgText" min="-2" pref="149" max="-2" attributes="0"/>
@@ -91,6 +54,11 @@
                       <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                   </Group>
               </Group>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="119" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -111,44 +79,16 @@
                       <Component id="cmbTimeInterval" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lblQuote1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblQuote6" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblQuote11" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lblQuote12" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblQuote2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblQuote7" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lblQuote3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblQuote8" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblQuote13" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lblQuote9" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblQuote4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblQuote14" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lblQuote10" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblQuote5" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblQuote15" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
+              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
               <Component id="lblAvgLbl" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="lblAvgText" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
                   <Component id="btnGetQuotes" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="0" pref="42" max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -201,90 +141,12 @@
         <Property name="text" type="java.lang.String" value="Select Time Interval in Seconds"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblQuote1">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Quote 1"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="lblQuote2">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Quote 2"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="lblQuote3">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Quote 3"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="lblQuote4">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Quote 4"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="lblQuote5">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Quote 5"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="lblQuote6">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Quote 6"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="lblQuote7">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Quote 7"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="lblQuote8">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Quote 8"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="lblQuote9">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Quote 9"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="lblQuote10">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Quote 10"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="lblQuote11">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Quote 11"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="lblQuote12">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Quote 12"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="lblQuote13">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Quote 13"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="lblQuote14">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Quote 14"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="lblQuote15">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Quote 15"/>
-      </Properties>
-    </Component>
     <Component class="javax.swing.JLabel" name="lblAvgLbl">
       <Properties>
         <Property name="text" type="java.lang.String" value="Average:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="lblAvgText">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Avg"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btnGetQuotes">
       <Properties>
@@ -294,5 +156,220 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGetQuotesActionPerformed"/>
       </Events>
     </Component>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="66" green="66" red="66" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="66" green="66" red="66" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="lblQuote5" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblQuote4" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblQuote3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblQuote2" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblQuote1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="lblQuote6" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="lblQuote11" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="lblQuote7" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="lblQuote12" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="lblQuote10" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="lblQuote15" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="lblQuote9" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="lblQuote14" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="lblQuote8" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                          <Component id="lblQuote13" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace pref="28" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="lblQuote1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblQuote6" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblQuote11" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="lblQuote2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblQuote7" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblQuote12" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="lblQuote3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblQuote8" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblQuote13" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="lblQuote4" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblQuote9" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblQuote14" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="lblQuote5" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblQuote10" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblQuote15" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="24" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="lblQuote1">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="66" green="66" red="66" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Quote 1"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblQuote2">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="66" green="66" red="66" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Quote 2"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblQuote3">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="66" green="66" red="66" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Quote 3"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblQuote4">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="66" green="66" red="66" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Quote 4"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblQuote6">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="66" green="66" red="66" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Quote 6"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblQuote7">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="66" green="66" red="66" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Quote 7"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblQuote8">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="66" green="66" red="66" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Quote 8"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblQuote13">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="66" green="66" red="66" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Quote 13"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblQuote5">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="66" green="66" red="66" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Quote 5"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblQuote9">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="66" green="66" red="66" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Quote 9"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblQuote10">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="66" green="66" red="66" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Quote 10"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblQuote14">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="66" green="66" red="66" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Quote 14"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblQuote15">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="66" green="66" red="66" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Quote 15"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblQuote12">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="66" green="66" red="66" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Quote 12"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblQuote11">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="66" green="66" red="66" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Quote 11"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
   </SubComponents>
 </Form>
